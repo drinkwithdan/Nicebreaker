@@ -24,8 +24,6 @@ const Home = ({ itemList }) => {
     <div className="home" >
       <div className="homepage-content">
 
-        { randomId }
-
         <button onClick={handleClick} >Randomise</button>
 
         {randomId && <Card card={ randomCard } />}

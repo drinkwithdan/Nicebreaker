@@ -6,6 +6,7 @@ const Card = ({ card }) => {
         <ul>
           <li>{ card.minPeople } - { card.maxPeople } participants. </li>
           <li>Preparation: { card.preparation }</li>
+          <li>{ card.instructions }</li>
         </ul>
       </div>
     </div>
