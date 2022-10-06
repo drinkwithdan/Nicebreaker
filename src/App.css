@@ -23,7 +23,6 @@ body {
 }
 
 .home {
-  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,6 +51,7 @@ body {
 
 .card {
 
+  width: 30%;
   background-color: antiquewhite;
   display: flex;
   flex-direction: column;

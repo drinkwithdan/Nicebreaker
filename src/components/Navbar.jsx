@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="navbar" >
       <h1>Nicebreaker</h1>
-      <h3>Find the nicest icebreaker</h3>
+      <h3>Search for a pre-workshop Icebreaker</h3>
     </div>
   )
 }
