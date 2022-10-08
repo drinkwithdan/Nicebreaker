@@ -7,7 +7,6 @@ const Card = ({ card }) => {
           <p>{ card.online && "Online" }</p>
           <p>{ card.inPerson && "Offline" }</p>
           <p>Preparation: { card.preparation }</p>
-          <p>Instructions: { card.instructions }</p>
       </div>
     </div>
   )

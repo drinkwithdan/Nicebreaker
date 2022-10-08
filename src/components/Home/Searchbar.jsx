@@ -25,16 +25,16 @@ const Searchbar = ({ handleFormSubmit }) => {
       <div className="search-form">
         <form onSubmit={ handleSubmit } >
 
-          I want activities to help 
+          I want icebreaker activities for 
 
           <input type="number" value={fields.participants} onChange={handleChange} id="participants" min="2" max="100"  /> 
 
           participants 
 
           <select id="inPerson" value={ fields.inPerson } onChange={handleChange} >
-            <option value="online">Online</option>
-            <option value="offline">Offline</option>
-            <option value="both">Online and Offline</option>
+            <option value="online">online</option>
+            <option value="offline">in person</option>
+            <option value="both">online and in person</option>
           </select>
 
           and I have 
