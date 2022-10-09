@@ -25,11 +25,11 @@ const Searchbar = ({ handleFormSubmit }) => {
       <div className="search-form">
         <form onSubmit={ handleSubmit } >
 
-          I want icebreaker activities for 
+          I want icebreaker activities for &nbsp;
 
           <input type="number" value={fields.participants} onChange={handleChange} id="participants" min="2" max="100"  /> 
 
-          participants 
+          &nbsp; participants in an &nbsp;
 
           <select id="inPerson" value={ fields.inPerson } onChange={handleChange} >
             <option value="online">online</option>
@@ -37,7 +37,7 @@ const Searchbar = ({ handleFormSubmit }) => {
             <option value="both">online and in person</option>
           </select>
 
-          and I have 
+          &nbsp; workshop and I have &nbsp;
 
           <select id="preparation" value={fields.preparation} onChange={handleChange} >
             <option value="None">no</option>
@@ -45,7 +45,7 @@ const Searchbar = ({ handleFormSubmit }) => {
             <option value="Lots">lots of</option>
           </select>
 
-            time to prepare it.
+            &nbsp; time to prepare it.
 
           <br/>
 

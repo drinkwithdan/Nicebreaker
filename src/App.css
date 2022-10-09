@@ -7,6 +7,7 @@ html, body {
 }
 
 body {
+  font-family: "Proxima Nova", sans-serif;
   background-color:gold;
 }
 
@@ -70,20 +71,24 @@ body {
   padding: 10px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 32px;
+  line-height: 1.6;
 }
 
 input {
-  background-color: gold;
-  font-size: 32px;
+  background-color: palegoldenrod;
   font-family: "Proxima Nova", sans-serif;
-  border: none;
+  font-size: 32px;
+  border: 1px solid teal;
+  border-radius: 3px;
   text-align: center;
 }
 
 select {
-  background-color: gold;
-  font-size: 32px;
+  background-color: palegoldenrod;
   font-family: "Proxima Nova", sans-serif;
+  font-size: 32px;
+  border: 1px solid teal;
+  border-radius: 3px;
   border: none;
   text-align: center;
 }
