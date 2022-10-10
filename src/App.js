@@ -11,8 +11,10 @@ function App() {
       <Navbar />
       <Routes>
         
+        {/* Index route /home */}
         <Route path="/home" element={icebreakers && <Home itemList={icebreakers} />} />
 
+        {/* Catch all other routes and redirect to /home */}
         <Route path="/*" element={<Navigate to="/home" />} />
 
       </Routes>
