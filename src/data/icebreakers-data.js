@@ -164,7 +164,6 @@ const icebreakers = [
     
     This continues until finally two players remain.`
   },
-
 ]
 
 export default icebreakers

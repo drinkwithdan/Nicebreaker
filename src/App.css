@@ -50,9 +50,9 @@ body {
 }
 
 .card {
-
-  width: 30%;
-  background-color: antiquewhite;
+  width: 15rem;
+  margin: 5px;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -65,7 +65,6 @@ body {
 }
 
 .searchbar .search-form {
-  width: 50%;
   border: 2px solid black;
   border-radius: 4px;
   padding: 10px;

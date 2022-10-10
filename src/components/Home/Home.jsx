@@ -7,25 +7,6 @@ const Home = ({ itemList }) => {
   const [ randomId, setRandomId ] = useState()
   const [currentList, setCurrentList] = useState()
 
-  // // FOR RANDOMISING // //
-
-  // useEffect(()=>{
-  //   randomiseId()
-  // }, [])
-
-  // const randomiseId = () => {
-  //   const randomisedId = Math.ceil(Math.random() * itemList.length)
-  //   setRandomId(randomisedId)
-  // }
-
-  // const handleClick = (event) => {
-  //   randomiseId()
-  // }
-
-  // const randomCard = itemList.find(({ id }) => id === randomId)
-
-  // // // // // // // // // //
-
   const handleFormSubmit = (fields) => {
 
     // Helper function to determine if preparation time is enough.

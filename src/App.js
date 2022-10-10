@@ -1,4 +1,5 @@
 import './App.css';
+import { Routes, Route, Navigate } from "react-router-dom"
 import Footer from './components/Footer';
 import Home from './components/Home/Home';
 import Navbar from "./components/Navbar"
@@ -8,9 +9,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {icebreakers && <Home itemList={icebreakers} />}
+      <Routes>
+        
+        <Route path="/home" element={icebreakers && <Home itemList={icebreakers} />} />
+
+        <Route path="/*" element={<Navigate to="/home" />} />
+
+      </Routes>
       <Footer />
     </div>
+
+
   );
 }
 
