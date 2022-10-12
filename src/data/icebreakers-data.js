@@ -7,9 +7,9 @@ const icebreakers = [
     preparation: "Some",
     online: true,
     inPerson: true,
-    instructions: `Everyone pairs up and has 1-3 minutes each to learn about their partner, while simultaneously drawing their portrait. Facts learned can be incorporated into their picture and the outcome is a ‘get to know you’ gallery. Each person then shows their masterpiece and introduces their partner to the group. 
+    instructions: `Everyone pairs up and has 1-3 minutes each to learn about their partner, while simultaneously drawing their portrait. Facts learned can be incorporated into their picture and the outcome is a ‘get to know you’ gallery. Each person then shows their masterpiece and introduces their partner to the group.\n 
     
-    This exercise can also be themed for the subject of your workshop. For example if you’re session is on careers, the interview theme could be about what they wanted to be when they grew up. The portraits all then are based on a theme of careers. If running this activity online, allocate random pairs to break-out rooms then come back together for the introductions. 
+    This exercise can also be themed for the subject of your workshop. For example if you’re session is on careers, the interview theme could be about what they wanted to be when they grew up. The portraits all then are based on a theme of careers. If running this activity online, allocate random pairs to break-out rooms then come back together for the introductions.\n 
     
     You can also have group members take photos of their portraits and add them to a miro board or google drive folder.`
   },

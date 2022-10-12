@@ -1,40 +1,13 @@
-/*
-* Function that prints out a range of numbers from num to 1,
-* If number is multiple of 3 print "Fizz", if a multiple of 5 print "Buzz",
-* If both print "BuzzFizz"
-* else print the number.
-*
-* @param {number} num
-* @return - prints based on the above conditions
+/* 
+* Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+* You may assume that each input would have exactly one solution, and you may not use the same element twice.
+* You can return the answer in any order.
 */
 
-const BuzzFizz = (num) => {
-
-  for (let i = num; i > 0; i--)
-  {
-
-    if (i % 3 === 0 && i % 5 === 0)
-    {
-      console.log("BuzzFizz")
-    }
-
-    else if (i % 3 === 0)
-    {
-      console.log("Fizz")
-    }
-
-    else if (i % 5 === 0)
-    {
-      console.log("Buzz")
-    }
-
-    else
-    {
-      console.log(i)
-    }
-
-  }
-
+const targetIndices = (nums, target) => {
+  const rtnArr = []
+  
 }
 
-BuzzFizz(20)
+console.log(targetIndices([2, 7, 11, 15], 9)) // => [0, 1]
+console.log(targetIndices([3, 2, 4], 6)) // => [1, 2]

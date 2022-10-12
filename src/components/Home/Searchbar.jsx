@@ -1,23 +1,36 @@
 import { useState } from "react"
 
-const Searchbar = ({ handleFormSubmit }) => {
+const Searchbar = ({ handleFormSubmit, handleShowAllClick, handleRandomiseClick }) => {
   const [fields, setFields] = useState({
     participants: 2,
     inPerson: "Online",
     preparation: "None"
   })
 
+  // Form control using {fields} state.
   const handleChange = (event) => {
     setFields({
       ...fields,
       [event.target.id]: event.target.value
     })
-    
   }
 
+  // Handles form "Search" submit button.
+  // Param: (event)
+  // Returns: Sends {fields} object to App.js
   const handleSubmit = (event) => {
     event.preventDefault()
     handleFormSubmit(fields)
+  }
+
+  // Handles form "Show all" button click.
+  const handleFormShowAllClick = () => {
+    handleShowAllClick()
+  }
+
+  // Handle form "Random" button click.
+  const handleFormRandomiseClick = () => {
+    handleRandomiseClick()
   }
 
   return (
@@ -27,7 +40,7 @@ const Searchbar = ({ handleFormSubmit }) => {
 
           I want icebreaker activities for &nbsp;
 
-          <input type="number" value={fields.participants} onChange={handleChange} id="participants" min="2" max="100"  /> 
+          <input type="number" value={fields.participants} onChange={handleChange} id="participants" min="2" max="100" /> 
 
           &nbsp; participants in an &nbsp;
 
@@ -49,7 +62,11 @@ const Searchbar = ({ handleFormSubmit }) => {
 
           <br/>
 
-          <button action="submit">Show me</button>
+          <button className="search-button" action="submit">Search</button>
+
+          <button className="show-all-button" onClick={handleFormShowAllClick}>Show All</button>
+
+          <button className="randomise-button" onClick={handleFormRandomiseClick}>Random</button>
           
         </form>
       </div>

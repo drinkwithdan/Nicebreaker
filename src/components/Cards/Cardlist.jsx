@@ -1,8 +1,8 @@
 import Card from "./Card"
 
-const Cardlist = ({ itemList }) => {
+const Cardlist = ({ currentList }) => {
 
-  const fullList = itemList.map((item) => {
+  const fullList = currentList.map((item) => {
     return <Card key={item.id} card={item} />
   })
 
