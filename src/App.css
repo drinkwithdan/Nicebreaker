@@ -126,6 +126,7 @@ button:hover {
 }
 
 .show-card {
+  margin: auto;;
   background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 3px;
@@ -154,5 +155,9 @@ button:hover {
 
   .home {
     width: 80%;
+  }
+
+  .show-card {
+    width: 75%;
   }
 }

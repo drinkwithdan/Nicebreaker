@@ -14,7 +14,7 @@ const Home = ({ currentList, handleFormSubmit, handleShowAllClick, handleRandomi
         handleShowAllClick={handleShowAllClick}
         handleRandomiseClick={handleRandomiseClick}
       />
-      {currentList.length ? <Cardlist currentList={currentList} /> : <h3 className="select-options-p">Select options from above.</h3>}
+      {currentList ? <Cardlist currentList={currentList} /> : <h3 className="select-options-p">Select options from above.</h3>}
 
     </div>
   )

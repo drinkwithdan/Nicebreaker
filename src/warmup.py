@@ -1,26 +1,18 @@
-def BuzzFizz (num):
-  """Function that prints out a range of numbers from num to 1,
-  If number is multiple of 3 print "Fizz", if a multiple of 5 print "Buzz",
-  If both print "BuzzFizz"
-  else print the number.
+"""
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
-  :param number: num - upper number
-  :print: based on the above conditions 
-  
-  """
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
-  for i in range(num, 0, -1):
+You can return the answer in any order.
 
-    if i % 3 == 0 and i % 5 == 0:
-      print("BuzzFizz")
+:param: int[]
+:param: int
+:return: int
+"""
 
-    elif i % 3 == 0:
-      print("Fizz")
+def target_indices(nums, target):
+  rtn_list = [[i, j] for i, j in range(nums) if (i != j) and (nums[i] + nums[j] == target)]
+  return rtn_list
 
-    elif i % 5 == 0:
-      print("Buzz")
-
-    else:
-      print(i)
-
-BuzzFizz(20)
+print(target_indices([2, 7, 11, 15], 9)) # => [0, 1]
+print(target_indices([3, 2, 4], 6)) # => [1, 2]

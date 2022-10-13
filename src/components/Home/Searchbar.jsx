@@ -63,12 +63,12 @@ const Searchbar = ({ handleFormSubmit, handleShowAllClick, handleRandomiseClick 
           <br/>
 
           <button className="search-button" action="submit">Search</button>
-
-          <button className="show-all-button" onClick={handleFormShowAllClick}>Show All</button>
-
-          <button className="randomise-button" onClick={handleFormRandomiseClick}>Random</button>
           
         </form>
+
+        <button className="show-all-button" onClick={handleFormShowAllClick}>Show All</button>
+
+        <button className="randomise-button" onClick={handleFormRandomiseClick}>Random</button>
       </div>
     </div>
   )

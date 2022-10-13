@@ -8,7 +8,7 @@ const Cardlist = ({ currentList }) => {
 
   return (
     <div className="cardlist">
-      { fullList }
+      { fullList.length ? fullList : <h2>There are no results</h2>}
     </div>
   )
 }

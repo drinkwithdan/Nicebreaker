@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from "react"
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route, useNavigate, Navigate } from "react-router-dom"
 import Footer from './components/Footer';
 import Home from './components/Home/Home';
 import Navbar from "./components/Navbar";
@@ -8,7 +8,9 @@ import Show from "./components/Home/Show"
 import icebreakersData from "./data/icebreakers-data"
 
 function App() {
-  const [currentList, setCurrentList] = useState([])
+  const [currentList, setCurrentList] = useState()
+  
+  const navigate = useNavigate()
 
   // Function handles the Searchbar "Show Me" button and changes currentList to match criteria.
   // Param: {object} Search fields object from Searchbar
@@ -74,12 +76,13 @@ function App() {
 
   // Handles Searchbar "Show all" button click.
   const handleShowAllClick = () => {
-    console.log("Show all clicked");
+    setCurrentList(icebreakersData)
   }
 
   // Handle Searchbar "Random" button click.
   const handleRandomiseClick = () => {
-    console.log("Random clicked");
+    const randomId = Math.floor(Math.random() * (icebreakersData.length))
+    navigate(`/show/${randomId}`)
   }
 
 
@@ -89,7 +92,7 @@ function App() {
       <Routes>
 
         {/* Index route /home */}
-        <Route path="/home" element={currentList && <Home
+        <Route path="/home" element={<Home
             currentList={currentList}
             handleFormSubmit={handleFormSubmit}
             handleShowAllClick={handleShowAllClick}
@@ -98,7 +101,7 @@ function App() {
         />
 
         {/* Show route /:id */}
-        <Route path="/:id" element={icebreakersData && <Show icebreakersData={icebreakersData} />} />
+        <Route path="/show/:id" element={icebreakersData && <Show icebreakersData={icebreakersData} />} />
 
         {/* Catch all other routes and redirect to /home */}
         <Route path="/*" element={<Navigate to="/home" />} />
