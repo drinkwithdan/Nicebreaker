@@ -105,7 +105,8 @@ body {
 input {
   background-color: palegoldenrod;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
+  color: black;
   border: none;
   border-radius: 3px;
   text-align: center;
@@ -114,7 +115,8 @@ input {
 select {
   background-color: palegoldenrod;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
+  color: black;
   border-color: black;
   border-radius: 3px;
   border: none;
@@ -124,6 +126,7 @@ select {
 button {
   width: 7rem;
   margin: 5px;
+  color: black;
   border: 2px black solid;
   border-radius: 3px;
   background-color: gold;

@@ -27,8 +27,6 @@ const Show = ({ icebreakersData }) => {
 
         <p>{currentItem.instructions}</p>
 
-
-
       </div>
     </div>
   )

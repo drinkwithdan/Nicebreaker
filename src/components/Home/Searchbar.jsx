@@ -58,7 +58,7 @@ const Searchbar = ({ handleFormSubmit, handleShowAllClick, handleRandomiseClick 
             <option value="Lots">lots of</option>
           </select>
 
-            &nbsp; time to prepare it.
+            &nbsp; time to prepare.
 
           <br/>
 
