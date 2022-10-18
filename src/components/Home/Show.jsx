@@ -8,8 +8,8 @@ const Show = ({ icebreakersData }) => {
   return (
     <div className="show">
 
-      <Link to="/home">
-        <button>{" < Back to Home"}</button>
+      <Link to="/Nicebreaker/home">
+        <button className="home-button">{"Back"}</button>
       </Link>
 
       <div className="show-card">

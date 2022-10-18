@@ -92,7 +92,7 @@ function App() {
       <Routes>
 
         {/* Index route /home */}
-        <Route path="/home" element={<Home
+        <Route path="/Nicebreaker/home" element={<Home
             currentList={currentList}
             handleFormSubmit={handleFormSubmit}
             handleShowAllClick={handleShowAllClick}
@@ -101,10 +101,10 @@ function App() {
         />
 
         {/* Show route /:id */}
-        <Route path="/show/:id" element={icebreakersData && <Show icebreakersData={icebreakersData} />} />
+        <Route path="/Nicebreaker/show/:id" element={icebreakersData && <Show icebreakersData={icebreakersData} />} />
 
         {/* Catch all other routes and redirect to /home */}
-        <Route path="/*" element={<Navigate to="/home" />} />
+        <Route path="/*" element={<Navigate to="/Nicebreaker/home" />} />
 
       </Routes>
       <Footer />

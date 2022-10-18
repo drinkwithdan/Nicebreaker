@@ -61,13 +61,13 @@ body {
   border: 1px solid black;
   border-radius: 3px;
   text-decoration: none;
-  color: black;
+  color: darkslategray;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-/* On card mouse-over, add a deeper shadow */
+/* On card mouse-over, add a deeper shadow and white background */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
   background-color: white;
@@ -82,6 +82,7 @@ body {
 
 .card-title {
   margin: 5px;
+  color: teal;
 }
 
 .card p {
@@ -94,7 +95,7 @@ body {
 }
 
 .searchbar .search-form {
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 10px;
   font-family: "Proxima Nova", sans-serif;
@@ -154,10 +155,11 @@ button:hover {
 }
 
 .show-card {
-  margin: auto;;
+  margin: auto;
   background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 3px;
+  color: black;
   padding: 10px;
 }
 
