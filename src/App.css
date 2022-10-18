@@ -154,7 +154,10 @@ button:hover {
   align-items: center;
 }
 
-.show-card {
+.show-card {  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1 1fr;
   margin: auto;
   background-color: whitesmoke;
   border: 1px solid black;
@@ -163,13 +166,31 @@ button:hover {
   padding: 10px;
 }
 
-.show-card-h2 {
-  color: teal;
+.show-card-title {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
   text-align: center;
 }
 
-.show-card-h3 {
+.show-card-info {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   text-align: center;
+  padding: 7px;
+}
+
+.show-card-instructions {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 7px;
+}
+
+.show-card-h2 {
+  color: teal;
+}
+
+.show-card-h3 {
+
 }
 
 .show-card p {

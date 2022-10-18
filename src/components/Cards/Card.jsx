@@ -5,7 +5,7 @@ const Card = ({ card }) => {
     <div className="card">
       <Link className="card-link" style={{ textDecoration: 'none', color: "black" }} to={`/Nicebreaker/show/${card.id}`}>
         <div className="card-title">
-          <h3 className="card-title">{card.title}</h3>
+          <h3 className="card-title-h3">{card.title}</h3>
         </div>
 
         <div className="card-prep">

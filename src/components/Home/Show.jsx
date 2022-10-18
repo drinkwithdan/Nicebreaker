@@ -14,18 +14,26 @@ const Show = ({ icebreakersData }) => {
 
       <div className="show-card">
 
-        <h2 className="show-card-h2">{currentItem.title}</h2>
+        <div className="show-card-title">
+          <h2 className="show-card-h2">{currentItem.title}</h2>
+        </div>
 
-        <h3 className="show-card-h3">{currentItem.minPeople} - {currentItem.maxPeople} participants</h3>
+        <div className="show-card-info">
 
-        <h3 className="show-card-h3"> {
-          ((currentItem.online && currentItem.inPerson) && "Online and in-person")
-          || (currentItem.online && "Online")
-          || (currentItem.inPerson && "In-person")
-        }
-        </h3>
+          <h3 className="show-card-h3">{currentItem.minPeople} - {currentItem.maxPeople} participants</h3>
 
-        <p>{currentItem.instructions}</p>
+          <h3 className="show-card-h3"> {
+            ((currentItem.online && currentItem.inPerson) && "Online and in-person")
+            || (currentItem.online && "Online")
+            || (currentItem.inPerson && "In-person")
+          }
+          </h3>
+
+        </div>
+
+        <div className="show-card-instructions">
+          <p>{currentItem.instructions}</p>
+        </div>
 
       </div>
     </div>
