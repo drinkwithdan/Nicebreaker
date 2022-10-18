@@ -47,13 +47,20 @@ body {
 .cardlist {
   height: 100%;
   width: 100%;
+  margin: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* Zoom-in animation when new card renders */
+@keyframes zoom-in {
+  0% { transform: scale(0, 0); }
+  100% { transform: scale(1, 1); }
+}
+
 .card {
-  width: 16rem;
+  width: 10rem;
   margin: 5px;
   background-color: whitesmoke;
   display: flex;
@@ -64,6 +71,7 @@ body {
   color: darkslategray;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  animation: zoom-in 0.4s;
   transition: 0.3s;
 }
 
@@ -142,7 +150,7 @@ button {
   background-color: gold;
   padding: 3px;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   transition: 0.3s;
 }
 
@@ -198,10 +206,6 @@ button:hover {
   color: teal;
 }
 
-.show-card-h3 {
-
-}
-
 .show-card p {
   white-space: pre-line;
 }
@@ -215,10 +219,22 @@ button:hover {
   text-decoration: underline;
 }
 
+.footer h6 {
+  margin: 10px;
+}
+
+.submit-h6 a {
+  color: teal;
+}
+
 @media only screen and (min-width: 490px) {
 
   .home {
     width: 80%;
+  }
+
+  .card {
+    width: 16rem;
   }
 
   .show-card {

@@ -2,7 +2,7 @@ import { useState } from "react"
 
 const Searchbar = ({ handleFormSubmit, handleShowAllClick, handleRandomiseClick }) => {
   const [fields, setFields] = useState({
-    participants: 2,
+    participants: 6,
     inPerson: "Online",
     preparation: "None"
   })
