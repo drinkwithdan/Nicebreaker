@@ -2,4 +2,6 @@
 
 ### An icebreaker facilitation selector
 
-Enter your filters for your icebreaker and click find.
+This app is built with React. Select your search criteria and click "Search" to display relevant icebreakers for your workshop!
+
+Updated content coming very soon!
