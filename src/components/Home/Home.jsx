@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react"
-import Card from "../Cards/Card"
 import Cardlist from "../Cards/Cardlist"
 import Searchbar from "./Searchbar"
 
 const Home = ({ currentList, handleFormSubmit, handleShowAllClick, handleRandomiseClick }) => {
-  const [randomId, setRandomId] = useState()
 
   return (
     <div className="home" >

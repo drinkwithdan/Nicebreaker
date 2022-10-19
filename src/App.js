@@ -103,7 +103,7 @@ function App() {
         {/* Show route /:id */}
         <Route path="/Nicebreaker/show/:id" element={icebreakersData && <Show icebreakersData={icebreakersData} />} />
 
-        {/* Catch all other routes and redirect to /home */}
+        {/* Catch all other routes and redirect to /Nicebreaker/home */}
         <Route path="/*" element={<Navigate to="/Nicebreaker/home" />} />
 
       </Routes>
