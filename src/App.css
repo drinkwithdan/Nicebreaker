@@ -37,6 +37,7 @@ body {
 }
 
 .home {
+  height: 80%;
   width: 100%;
   margin:  10px auto;
   display: flex;
@@ -168,17 +169,19 @@ button:hover {
 }
 
 .show {
+  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.show-card {  
+.show-card {
+  height: 100%;  
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1 1fr;
-  margin: auto;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  margin: 20px auto;
   background-color: whitesmoke;
   border: 1px solid black;
   border-radius: 3px;
@@ -193,6 +196,8 @@ button:hover {
 }
 
 .show-card-info {
+  background-color: lightgray;
+  
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   text-align: center;
@@ -202,7 +207,7 @@ button:hover {
 .show-card-instructions {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  padding: 7px;
+  padding: 15px;
 }
 
 .show-card-h2 {
@@ -213,9 +218,15 @@ button:hover {
   white-space: pre-line;
 }
 
+.footer {
+  height: 10%;
+  background-color: teal;
+  color: gold;
+}
+
 .footer a {
   text-decoration: none;
-  color: black;
+  color: gold;
 }
 
 .footer a:hover {
@@ -227,7 +238,7 @@ button:hover {
 }
 
 .submit-h6 a {
-  color: teal;
+  color: palegoldenrod;
 }
 
 @media only screen and (min-width: 490px) {
