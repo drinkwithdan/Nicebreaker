@@ -37,7 +37,7 @@ body {
 }
 
 .home {
-  height: 80%;
+  height: 75%;
   width: 100%;
   margin:  10px auto;
   display: flex;
@@ -252,11 +252,12 @@ button:hover {
   }
 
   .show-card {
-    width: 75%;
+    width: 70%;
     padding: 20px;
   }
 
   .navbar {
+    height: 15%;
     display: flex;
     background-color: teal;
     color: gold;
@@ -264,7 +265,12 @@ button:hover {
     padding: 10px;
   }
 
+  .navbar-left {
+    width: 20%;
+  }
+
   .navbar-disclaimer {
+    width: 20%;
     height: 100%;
     display: flex;
     justify-items: center;

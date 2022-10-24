@@ -4,6 +4,10 @@ const Navbar = () => {
   return (
     <div className="navbar" >
 
+      <div className="navbar-left">
+        
+      </div>
+
       <div className="navbar-headings">
         <h1>Nicebreaker</h1>
 
