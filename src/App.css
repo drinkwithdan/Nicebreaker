@@ -63,6 +63,7 @@ body {
 }
 
 .card {
+  height: 7rem;
   width: 10rem;
   margin: 5px;
   background-color: whitesmoke;
