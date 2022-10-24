@@ -82,7 +82,7 @@ function App() {
   // Handle Searchbar "Random" button click.
   const handleRandomiseClick = () => {
     const randomId = Math.floor(Math.random() * (icebreakersData.length))
-    navigate(`/show/${randomId}`)
+    navigate(`/Nicebreaker/show/${randomId}`)
   }
 
 
@@ -92,7 +92,7 @@ function App() {
       <Routes>
 
         {/* Index route / */}
-        <Route path="/Nicebreaker/" element={<Home
+        <Route path="/Nicebreaker" element={<Home
             currentList={currentList}
             handleFormSubmit={handleFormSubmit}
             handleShowAllClick={handleShowAllClick}
@@ -107,7 +107,7 @@ function App() {
         <Route path="/Nicebreaker/*" element={<Navigate to="/Nicebreaker/home" />} /> */}
 
         {/* Catch all other routes and redirect to /Nicebreaker/home */}
-        <Route path="/*" element={<Navigate to="/Nicebreaker/" />} />
+        <Route path="/*" element={<Navigate to="/Nicebreaker" />} />
 
       </Routes>
       <Footer />
