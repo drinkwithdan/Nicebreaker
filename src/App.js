@@ -91,8 +91,8 @@ function App() {
       <Navbar />
       <Routes>
 
-        {/* Index route /home */}
-        <Route path="/Nicebreaker/home" element={<Home
+        {/* Index route / */}
+        <Route path="/Nicebreaker/" element={<Home
             currentList={currentList}
             handleFormSubmit={handleFormSubmit}
             handleShowAllClick={handleShowAllClick}
@@ -103,8 +103,11 @@ function App() {
         {/* Show route /:id */}
         <Route path="/Nicebreaker/show/:id" element={icebreakersData && <Show icebreakersData={icebreakersData} />} />
 
+        {/* Nicebreaker/* catch shared links
+        <Route path="/Nicebreaker/*" element={<Navigate to="/Nicebreaker/home" />} /> */}
+
         {/* Catch all other routes and redirect to /Nicebreaker/home */}
-        <Route path="/*" element={<Navigate to="/Nicebreaker/home" />} />
+        <Route path="/*" element={<Navigate to="/Nicebreaker/" />} />
 
       </Routes>
       <Footer />
