@@ -3,7 +3,7 @@
 ### An icebreaker facilitation selector
 Nicebreaker is a mobile-first React app to search and display workshop icebreaker activities based on certain requirements. The goal of the app was to quickly and easily access content with the minimum amount of clicks possible.
 
-All of the data, routing and logic lives in React - with the aim of keeping functionality as bare-bones and simple as possible.
+This is a front-end app, with all of the data, routing and logic living in React - with the aim of keeping functionality as bare-bones and simple as possible.
 
 #### Dependencies:
  - react
